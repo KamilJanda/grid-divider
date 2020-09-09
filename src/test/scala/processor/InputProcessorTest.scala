@@ -16,8 +16,6 @@ class InputProcessorTest extends AnyFlatSpec with Matchers with BeforeAndAfterEa
     val inputWidth    = 20
     val inputHeight   = 1
 
-//    val gridWidth = inputWidth / numberOfGrids
-
     val inputFile =
       InputFile(
         (0 until 2).map(x => (0 until inputHeight).map(y => Cell(Coordinates(x, y), Unavailable))).toList.flatten ++
